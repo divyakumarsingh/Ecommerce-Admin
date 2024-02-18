@@ -1,26 +1,56 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+textarea {
+    @apply border-2 border-gray-300 rounded p-2 w-full mb-2
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+input:focus {
+    @apply border-blue-900
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+    @apply text-xl text-blue-900 mb-2
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+label {
+    @apply text-blue-900
+}
+
+.btn-primary,
+.btn-default,
+.btn-danger {
+    @apply bg-blue-900 text-white p-1.5 rounded-md inline-flex gap-1 px-4
+}
+
+.btn-primary {
+    @apply bg-blue-900
+}
+
+.btn-default {
+    @apply bg-gray-500
+}
+
+.btn-danger {
+    @apply bg-red-900
+}
+
+
+.table-primary {
+    @apply rounded my-5 w-full
+}
+
+.table-primary tr td,
+.table-primary tr th {
+    @apply border border-blue-300 p-1
+}
+
+.table-primary tr th {
+    @apply bg-blue-100
+}
+
+.table-primary a {
+    @apply mr-1
 }
