@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import axios from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { EditIcon, TrashIcon } from '@/utils/icons'
+import { EditIcon, TrashIcon } from '@/utils/icons';
 
 export default function Products() {
     const [products, setProducts] = useState([])

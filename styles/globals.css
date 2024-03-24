@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 input,
-textarea {
+textarea,
+select {
     @apply border-2 border-gray-300 rounded p-2 w-full mb-2
 }
 
-input:focus {
+input:focus, textarea:focus, select:focus {
     @apply border-blue-900
 }
 
@@ -22,7 +23,7 @@ label {
 .btn-primary,
 .btn-default,
 .btn-danger {
-    @apply bg-blue-900 text-white p-1.5 rounded-md inline-flex gap-1 px-4
+    @apply bg-blue-900 text-white p-1.5 rounded-md inline-flex gap-1 px-4 items-center
 }
 
 .btn-primary {

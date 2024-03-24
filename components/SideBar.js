@@ -5,7 +5,7 @@ export default function SideBar() {
     return (
         <aside className={''}>
             <Logo />
-            <Nav/>
+            <Nav />
         </aside>
     );
 }
